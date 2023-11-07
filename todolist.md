@@ -2,6 +2,8 @@
 
 <h2>USUARIO</h2>
 
+<p>Libs utilizadas wpp connect e node-cron</p>
+
 <p>[] criar usuario:</p>
 <ul>
 <!-- <li>nome</li> -->
