@@ -1,6 +1,6 @@
 import joi from 'joi'
 
-const userSignupValidator = joi.object({
+const userCreateValidator = joi.object({
   name: joi.string().required().messages({
     "any.required": "Nome é obrigatório.",
     "string.empty": "Nome é obrigatório."
@@ -16,4 +16,4 @@ const userSignupValidator = joi.object({
   })
 })
 
-export = userSignupValidator
+export = userCreateValidator

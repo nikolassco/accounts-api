@@ -4,9 +4,9 @@
 
 <p>Libs utilizadas wpp connect e node-cron</p>
 
-<p>[] criar usuario:</p>
+<p>[x] criar usuario:</p>
 <ul>
-<!-- <li>nome</li> -->
+<li>nome</li>
 <!-- <li>email</li> -->
 <li>nome de usuario</li>
 <li>senha</li>
