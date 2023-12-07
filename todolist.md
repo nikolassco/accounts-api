@@ -12,7 +12,7 @@
 <li>senha</li>
 </ul>
 
-<p>[] logar atraves do usuario criado:</p>
+<p>[x] logar atraves do usuario criado:</p>
 <ul>
 <!-- <li>email</li> -->
 <li>nome de usuario</li>
