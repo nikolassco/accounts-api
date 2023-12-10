@@ -29,3 +29,12 @@ create table accounts (
 	status VARCHAR(10) CHECK (status IN ('pago', 'pendente')) NOT NULL,
 	created_at TIMESTAMPTZ DEFAULT Now()
 );
+
+create table messages (
+	id serial primary key,
+	user_id integer references users(id),
+	destination varchar(13),
+	description text not null,
+	due_date date not null,
+	created_at TIMESTAMPTZ DEFAULT Now()
+)

@@ -44,18 +44,18 @@
 <hr>
 
 
-<h2>CONTAS</h2>
+<h2>MENSAGENS</h2>
 
-<p>[ ] criar conta:</p>
+<p>[x] criar mensagem</p>
 <ul>
+<li>destinatario</li>
 <li>descrição</li>
 <li>data</li>
-<li>valor</li>
-<li>paga ou pendente</li>
-<li>parcelas</li>
 </ul>
 
-<p>[ ] visualizar conta</p>
+<p>[x] visualizar todas mensagens</p>
+
+<p>[ ] visualizar uma mensagem</p>
 
 <p>[ ] editar conta:</p>
 <ul>
