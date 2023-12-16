@@ -33,7 +33,7 @@ create table accounts (
 create table messages (
 	id serial primary key,
 	user_id integer references users(id),
-	destination varchar(13),
+	destination varchar(18),
 	description text not null,
 	due_date date not null,
 	created_at TIMESTAMPTZ DEFAULT Now()
