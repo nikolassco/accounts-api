@@ -3,6 +3,7 @@ import { MessagesController } from './controllers/MessagesController'
 import { UsersController } from './controllers/UsersController'
 
 import validateSchema from './middlewares/validateSchema'
+import { messageCreateValidator } from './validators/messageValidator'
 const verifyJwt = require('./middlewares/validateToken')
 import { userCreateValidator, userLoginValidator } from './validators/userValidator'
 
@@ -19,7 +20,7 @@ routes.get('/ola', (req, res) => {
   res.send('ola')
 })
 
-routes.post('/message', messagesController.create)
+routes.post('/message', validateSchema(messageCreateValidator), messagesController.create)
 routes.get('/messages', messagesController.getAll)
 
 export default routes
