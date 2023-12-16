@@ -10,8 +10,9 @@ const messageCreateValidator = joi.object({
     "any.required": "Descrição é obrigatória.",
     "string.empty": "Descrição é obrigatória.",
   }),
-  dueDate: joi.date().required().messages({
+  dueDate: joi.date().required().iso().messages({
     "any.required": "Data é obrigatória",
+    "date.format": "Modelo de data aceito AAAA-MM-DD",
   })
   // email: joi.string().email().required().messages({
   // "string.email": "E-mail está em um formato inválido."
